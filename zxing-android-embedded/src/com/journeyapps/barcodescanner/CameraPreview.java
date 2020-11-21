@@ -137,7 +137,7 @@ public class CameraPreview extends ViewGroup {
 
     // Fraction of the width / heigth to use as a margin. This fraction is used on each size, so
     // must be smaller than 0.5;
-    private double marginFraction = 0.1d;
+    private double marginFraction = 0.35d;
 
     private PreviewScalingStrategy previewScalingStrategy = null;
 
@@ -849,6 +849,10 @@ public class CameraPreview extends ViewGroup {
             // We don't want a frame that is taller than wide.
             intersection.inset(0, (intersection.height() - intersection.width()) / 2);
         }
+
+        int verticalOffset = Math.min(0, surface.height() / -4);
+        intersection.offset(0, verticalOffset);
+
         return intersection;
     }
 
