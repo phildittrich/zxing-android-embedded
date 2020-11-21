@@ -164,7 +164,7 @@ public class ViewfinderView extends View {
             canvas.drawBitmap(resultBitmap, null, frame, paint);
         } else {
             // If wanted, draw a red "laser scanner" line through the middle to show decoding is active
-            if (laserVisibility) {
+            if (false) {
                 paint.setColor(laserColor);
 
                 paint.setAlpha(SCANNER_ALPHA[scannerAlpha]);
