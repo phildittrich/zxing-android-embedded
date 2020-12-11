@@ -137,7 +137,7 @@ public class CameraPreview extends ViewGroup {
 
     // Fraction of the width / heigth to use as a margin. This fraction is used on each size, so
     // must be smaller than 0.5;
-    private double marginFraction = 0.35d;
+    private double marginFraction = 0.30d;
 
     private PreviewScalingStrategy previewScalingStrategy = null;
 
